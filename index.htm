@@ -17,24 +17,26 @@
     <div class="container">
       <div class="store-array">
         <div class="row">
-          <div >
-            <h2 class="text-center">Bài tập nhập số nguyên - Lưu vào mảng</h2>
+          <div class="col-6 mx-auto">
+            <h2 class="text-center">Lưu mảng.</h2>
 
             <div class="form-group">
-              <label for="elementOfArray">Nhập số nguyên bất kì vào mảng</label>
+              <label for="elementOfArray">Nhập phần tử của mảng</label>
               <input
                 id="elementOfArray"
                 type="text"
                 class="form-control"
-                placeholder=""
+                
               />
               <span id="notificationElement" class="text-danger"></span>
             </div>
 
             <button id="btnAddElement" class="btn btn-dark">
-              Thêm
+              Thêm 
             </button>
-           
+            <br>
+            <br>
+            <button id="removeArray" class="btn btn-success d-inline-block">Xóa mảng</button>
 
             <div class="array-current">
               <h3 id="arrayCurrent" class="my-3"></h3>
@@ -43,22 +45,22 @@
               <div class="select-feature form-group">
                 <label for="selectFeature">Chọn chức năng</label>
                 <select id="selectFeature" class="form-control">
-                  <option selected>Một trong các chức năng:</option>
-                  <option>Tổng các số dương trong mảng</option>
-                  <option>Đếm các số dương trong mảng</option>
-                  <option>Tìm số nhỏ nhất trong mảng</option>
-                  <option>Tìm số dương nhỏ nhất trong mảng</option>
-                  <option>Tìm số chẵn cuối cùng trong mảng</option>
-                  <option>Đổi chổ 2 giá trị trong mảng theo vị trí</option>
-                  <option>Sắp xếp mảng theo thứ tự tăng dần</option>
-                  <option>Tìm số nguyên tố đầu tiên trong mảng</option>
-                  <option>Nhập thêm 1 mảng số thực.</option>
-                  <option>So sánh số lượng số dương và số âm trong mảng</option>
+                  <option selected>Chọn</option>
+                  <option class="bg-success">Tổng các số dương trong mảng</option>
+                  <option class="">Đếm các số dương trong mảng</option>
+                  <option class="bg-primary">Tìm số nhỏ nhất trong mảng</option>
+                  <option class="bg-muted">Tìm số dương nhỏ nhất trong mảng</option>
+                  <option class="bg-info">Tìm số chẵn cuối cùng trong mảng</option>
+                  <option class="bg-body">Đổi chổ 2 giá trị trong mảng theo vị trí</option>
+                  <option class="bg-secondary">Sắp xếp mảng theo thứ tự tăng dần</option>
+                  <option class="bg-light">Tìm số nguyên tố đầu tiên trong mảng</option>
+                  <option class="bg-warning">Nhập thêm 1 mảng số thực.</option>
+                  <option class="bg-white">So sánh số lượng số dương và số âm trong mảng</option>
                 </select>
                 <span id="notifiSelect" class="text-danger"></span>
               </div>
 
-              <button id="btnConfirm" class="btn btn-dark">In kết quả</button>
+              <button id="btnConfirm" class="btn btn-dark">Tính</button>
 
               <div class="notification-feature">
                 <h3 id="notificationFeature" class="my-3 text-danger"></h3>
@@ -74,6 +76,6 @@
         </div>
       </div>
     </div>
-    <script src="./JS/MAIN.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
